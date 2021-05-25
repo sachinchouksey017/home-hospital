@@ -1,0 +1,39 @@
+.toolbar {
+    background-color: white;
+    margin: 0 0 32px;
+    padding: 11px 30px 11px 5px;
+    box-shadow: 0px 2px 6px 0 rgba(88, 92, 101, 0.3);
+    height: fit-content;
+    .child-header {
+        width: 100%;
+    }
+    .head {
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #3b4b5f;
+        font-family: "Archivo", sans-serif;
+        cursor: pointer;
+        transition: transform 0.4s;
+    }
+    .head:hover {
+        transform: scale(1.04);
+    }
+    .head-selected {
+        color: #1fa4dd;
+    }
+    .profile-pic {
+        width: 40px;
+        border-radius: 50%;
+    }
+}
+@media only screen and (min-width: 1800px) {
+    .toolbar {
+        .child-header {
+            width: 80%;
+        }
+    }
+}

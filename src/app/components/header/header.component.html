@@ -1,0 +1,50 @@
+<mat-toolbar class="toolbar" fxLayout fxLayoutAlign='center center'>
+<div class="child-header" fxLayout  fxLayoutAlign='space-between center'>
+
+  <img fxFlex.xs=120px src="../../../assets/image/home-hosp.png" alt="logo">
+  <div fxLayout fxLayoutAlign='space-between center' fxLayoutGap='15px' fxLayoutGap.xs='3px'>
+    <div fxHide.sm fxHide.xs class="head head-selected">
+      Home
+    </div>
+    <div fxHide.sm fxHide.xs class="head">
+      My Appointments
+    </div>
+    <div fxHide.sm fxHide.xs class="head">
+      Delegated Access
+    </div>
+    <div fxHide.sm fxHide.xs class="head">
+      Ads
+    </div>
+    <div fxHide.sm fxHide.xs class="head">
+      Book Appointment
+    </div>
+    <button mat-icon-button>
+      <mat-icon matBadge="3" matBadgeColor="warn">notifications</mat-icon>
+    </button>
+    <!-- menu -->
+    <button fxHide fxShow.xs fxShow.sm mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu fxShow.xs fxShow.sm #menu="matMenu">
+      <button mat-menu-item>
+        <span>Home</span>
+      </button>
+      <button mat-menu-item >
+        <span> My Appointments</span>
+      </button>
+      <button mat-menu-item>
+        <span>Delegated Access</span>
+      </button>
+      <button mat-menu-item>
+        <span>Ads</span>
+      </button>
+      <button mat-menu-item>
+        <span>Book Appointment</span>
+      </button>
+    </mat-menu>
+    <!--menu end -->
+    <img class="profile-pic" src="../../../assets/image/profile.png" alt="profile">
+  </div>
+</div>
+
+</mat-toolbar>
