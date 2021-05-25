@@ -11,7 +11,38 @@
     </div>
     <mat-card fxFlex.sm=300px fxFlex.xs=100 class=" card appointment-card">
       <div class="appointment-text">
-        Upcoming Appointments      </div>
+        Upcoming Appointments </div>
+      <div class="carusel" fxLayout fxLayout.xs='row wrap' fxLayoutAlign='space-between center'>
+        <button class="arrow" mat-mini-fab aria-label="Example icon button with a filter list icon">
+          <mat-icon>chevron_left</mat-icon>
+        </button>
+        <button fxHide fxShow.xs class="arrow" mat-mini-fab aria-label="Example icon button with a filter list icon">
+          <mat-icon>navigate_next</mat-icon>
+        </button>
+        <div fxFlex class="profile-detail">
+          <div fxLayout fxLayoutAlign='start center'>
+            <img fxFlexOffset='20px' class="appointment-profile" src="../../../assets/image/profile1.jpeg"
+              alt="profile">
+            <div fxLayout='column' fxFlexOffset='10px'>
+              <div class="name">
+                Dr. Shaun Marsh
+              </div>
+              <div fxLayout fxLayoutAlign='start center'>
+                <mat-icon style="color: gray; width: 20px;height: 20px;font-size: 20px;">schedule</mat-icon>
+                <div>
+                  {{date | date: 'short'}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div fxLayout fxLayoutAlign='center center'>
+            <button class="view-detail" mat-raised-button >View Details</button>
+          </div>
+        </div>
+        <button fxHide.xs fxShow class="arrow" mat-mini-fab aria-label="Example icon button with a filter list icon">
+          <mat-icon>navigate_next</mat-icon>
+        </button>
+      </div>
     </mat-card>
 
 

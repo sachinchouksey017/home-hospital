@@ -3,12 +3,12 @@
     border-radius: 5px;
     box-shadow: 0px 2px 13px 0 rgba(88, 92, 101, 0.3);
     background-color: #ffffff;
-    min-height: 170px;
+    min-height: 184px;
     box-sizing: border-box;
 }
 .appointment-card {
     width: 430px;
-    .appointment-text{
+    .appointment-text {
         font-family: Roboto;
         font-size: 16px;
         font-weight: 500;
@@ -19,40 +19,76 @@
         text-align: left;
         color: #333333;
     }
+    .appointment-profile {
+        width: 40px;
+        border-radius: 50%;
+    }
+    .name {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #333333;
+        margin-bottom: 6px;
+    }
 }
 .responsive {
     width: 100%;
     padding: 11px 30px;
     box-sizing: border-box;
 }
-.card-text{
-        font-family: Roboto;
-        font-size: 20px;
-        font-weight: 400;
-        font-stretch: normal;
-        font-style: italic;
-        line-height: 1.5;
-        letter-spacing: normal;
-        text-align: left;
-        color: #304156;
+.card-text {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #304156;
 }
-.card-text-bold{
+.card-text-bold {
     font-weight: 600;
 }
-.welcome-text{
+.welcome-text {
     margin-bottom: 10px;
 }
-
-
+.carusel {
+    min-height: 125px;
+    width: 100%;
+}
+.arrow {
+    background-color: transparent;
+    color: turquoise;
+}
+.view-detail {
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px 0 rgba(88, 92, 101, 0.82);
+    color: white;
+    background-color: #1fa4dd;
+    padding: 0 22px;
+}
 @media only screen and (min-width: 1800px) {
     .responsive {
         width: 80%;
     }
 }
 @media only screen and (max-width: 600px) {
-    .appointment-card{
+    .appointment-card {
         margin-top: 30px;
+        .appointment-text{
+            margin-bottom: 20px;
+        }
     }
 
+    .profile-detail {
+        min-width: 100%;
+        margin-top: 20px;
+    }
 }
-

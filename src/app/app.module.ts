@@ -9,6 +9,10 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { DisplayComponent } from './components/display/display.component';
 import { HomeComponent } from './components/home/home.component';
 import {MatIconModule} from '@angular/material/icon';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { SearchCardComponent } from './components/search-card/search-card.component';
+import { BookAppointmentComponent } from './components/book-appointment/book-appointment.component';
+import { BookAppointmentCardComponent } from './components/book-appointment-card/book-appointment-card.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +20,17 @@ import {MatIconModule} from '@angular/material/icon';
     HeaderComponent,
     WelcomeComponent,
     DisplayComponent,
-    HomeComponent
+    HomeComponent,
+    SearchCardComponent,
+    BookAppointmentComponent,
+    BookAppointmentCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AppMaterial,
-    MatIconModule
+    MatIconModule,
+    IvyCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

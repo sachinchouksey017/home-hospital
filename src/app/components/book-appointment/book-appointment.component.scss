@@ -1,0 +1,161 @@
+.router {
+    font-family: Archivo;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 6.04;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3b4b5f;
+}
+.content {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.stepper-div {
+    margin-top: 84px;
+}
+.card {
+    width: 100%;
+    min-height: 548px;
+    max-width: 700px;
+    min-width: 465px;
+    box-sizing: border-box;
+    padding: 30px 30px 30px 23px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 13px 0 rgba(88, 92, 101, 0.3);
+    background-color: #ffffff;
+    .heading {
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3b4b5f;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .radio-div {
+        margin-bottom: 20px;
+        .radio-label {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.29;
+            letter-spacing: normal;
+            text-align: left;
+            color: #304156;
+            margin-bottom: 18px;
+        }
+        .radio-button-label {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.29;
+            letter-spacing: normal;
+            text-align: left;
+            color: #98a0ab;
+        }
+    }
+    .select-list-head {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 6.04;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3b4b5f;
+    }
+
+    .row {
+        margin-bottom: 20px;
+        .profile {
+            width: 48px;
+            border-radius: 50%;
+        }
+        .name {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #304156;
+        }
+        .relation {
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #2eb2ff;
+        }
+        .mail-id {
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #304156;
+        }
+        .mobile {
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #304156;
+        }
+    }
+}
+.link:hover {
+    color: rgb(99, 137, 243);
+    cursor: pointer;
+}
+.view-detail {
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px 0 rgba(88, 92, 101, 0.82);
+    color: white;
+    background-color: #1fa4dd;
+    padding: 0 22px;
+    line-height: 42px;
+}
+
+@media only screen and (min-width: 1400px) {
+    .content {
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .content {
+        max-width: 95%;
+    }
+}
+@media only screen and (max-width: 600px) {
+   
+    .card {
+        min-width: 100%;
+    }
+}

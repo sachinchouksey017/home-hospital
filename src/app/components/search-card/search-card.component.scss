@@ -1,0 +1,79 @@
+.search-card {
+    min-width: 230px;
+    min-height: 178px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 15px 21px 5px 1px;
+    padding: 20px 0;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 rgba(27, 28, 31, 0.07);
+    border: solid 1px #e6eaee;
+    background-color: #ffffff;
+    .first-row {
+        padding: 0 20px 10px;
+    }
+    .specialist {
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2eb2ff;
+    }
+
+    .profile {
+        width: 48px;
+        border-radius: 50%;
+    }
+    .name {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #304156;
+        margin-bottom: 8px;
+    }
+    .age {
+        color: #98a0ab;
+    }
+    .second-row {
+        padding: 10px 20px 0;
+        .place {
+            margin-bottom: 10px;
+            .place-txt {
+                font-family: Roboto;
+                font-size: 13px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #304156;
+            }
+        }
+    }
+}
+.icon {
+    color: grey;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.star{
+    color: #ff8a48;
+}
+@media only screen and (max-width: 600px) {
+    .search-card {
+        min-width: 100%;
+        .profile {
+            width: 80px;
+        }
+    }
+}

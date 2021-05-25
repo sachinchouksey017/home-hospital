@@ -1,3 +1,110 @@
-<p>
-  display works!
-</p>
+<div class="main-display" fxLayout='row' fxLayoutAlign='center center'>
+  <div class="card">
+    <div fxLayout='row wrap' fxLayoutAlign='start end' fxLayoutAlign.sm='space-between end' fxLayoutGap=20px
+      fxLayoutGap.sm=0 fxLayoutGap.xs=0>
+      <div fxFlex.xs=100 fxFlex.sm=48 class="field" fxLayout='column' fxLayoutAlign='space-between start'>
+        <mat-label class="label">Location</mat-label>
+
+        <mat-form-field fxFlex.xs=100 class="form-field" appearance="legacy">
+          <mat-label>City, State or Zip</mat-label>
+          <input matInput placeholder="City, State or Zip">
+          <mat-icon class='icon' matSuffix>search</mat-icon>
+        </mat-form-field>
+      </div>
+      <div fxFlex.xs=100 fxFlex.sm=48 class="field" fxLayout='column' fxLayoutAlign='start start'>
+        <mat-label class="label">Location</mat-label>
+
+        <mat-slider fxFlex.xs=100 class="form-field" value="50" fxFlexOffset=18px aria-label="unit(s)"></mat-slider>
+
+      </div>
+      <div fxFlex.xs=100 fxFlex.sm=48 class="field" fxLayout='column' fxLayoutAlign='start start'>
+        <mat-label class="label"></mat-label>
+
+        <mat-form-field fxFlex.xs=100 class="form-field" appearance="legacy">
+          <mat-label>Select Specialities</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="ele">
+            <mat-option *ngFor="let ele of temp" [value]="ele">
+              {{ele}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div fxFlex.xs=100 fxFlex.sm=48 class="field" fxLayout='column' fxLayoutAlign='start start'>
+        <mat-label class="label"></mat-label>
+
+        <mat-form-field fxFlex.xs=100 class="form-field" appearance="legacy">
+          <mat-label>Insurance</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="ele">
+            <mat-option *ngFor="let ele of temp" [value]="ele">
+              {{ele}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div fxFlex.xs=100 fxFlex.sm=48 class="field" fxLayout='column' fxLayoutAlign='start start'>
+        <mat-label class="label"></mat-label>
+
+        <mat-form-field fxFlex.xs=100 class="form-field" appearance="legacy">
+          <mat-label>Select languages</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="ele">
+            <mat-option *ngFor="let ele of temp" [value]="ele">
+              {{ele}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div fxFlex.xs=100 fxFlex.sm=48 class="field" fxLayout='column' fxLayoutAlign='start start'>
+        <mat-label class="label gender">Gender</mat-label>
+
+        <mat-radio-group fxFlex.xs=100 class="form-field" aria-label="Select an option">
+          <mat-radio-button value="1">Male</mat-radio-button>
+          <mat-radio-button fxFlexOffset=10px value="2">Female</mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <div fxFlex.xs=100 fxFlex.sm=48 class="field" fxLayout='column' fxLayoutAlign='start start'>
+        <mat-label class="label"></mat-label>
+
+        <mat-form-field fxFlex.xs=100 class="form-field" appearance="legacy">
+          <mat-label>Select Affiliations</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="ele">
+            <mat-option *ngFor="let ele of temp" [value]="ele">
+              {{ele}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div fxFlex.xs=100 fxFlex.sm=48 class="field" fxLayout='column' fxLayoutAlign='start start'>
+        <mat-label class="label"></mat-label>
+
+        <mat-form-field fxFlex.xs=100 class="form-field" appearance="legacy">
+          <mat-label>Select Provider Types</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="ele">
+            <mat-option *ngFor="let ele of temp" [value]="ele">
+              {{ele}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div fxFlex.xs=100 fxFlex.sm=48 class="field" fxLayout='column' fxLayoutAlign='start start'>
+        <mat-label class="label"></mat-label>
+        <mat-form-field fxFlex.xs=100 class="form-field" appearance="legacy">
+          <mat-label>Select Provider Sub Types</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="ele">
+            <mat-option *ngFor="let ele of temp" [value]="ele">
+              {{ele}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="field" fxFlex.xs=100 fxLayout fxLayoutAlign='center center'>
+        <button class="view-detail" fxFlex.xs=100 mat-raised-button>Reset Filters</button>
+      </div>
+
+    </div>
+    <div class="record-count">{{count}} Records Found</div>
+    <div fxLayout='row wrap' fxLayoutAlign='space-between start'>
+      <app-search-card fxFlex=32 fxFlex.md=48 fxFlex.sm=49 fxFlex.xs=100 *ngFor='let item of searchData; let index=i'></app-search-card>
+    </div>
+
+  </div>
+</div>

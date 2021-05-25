@@ -1,0 +1,106 @@
+<app-header></app-header>
+<div class="content" fxLayout fxLayoutAlign='center start' fxLayout.xs='column-reverse' fxLayoutAlign.xs='center center'>
+  <div class="stepper-div" fxFlex=350px fxFlex.md=250px fxFlex.sm=180px>
+    <mat-vertical-stepper [linear]="isLinear" #stepper>
+
+      <mat-step [stepControl]="firstFormGroup">
+        <ng-template matStepLabel>Appointment Type</ng-template>
+
+        <!-- <form [formGroup]="firstFormGroup">
+          <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form> -->
+      </mat-step>
+      <mat-step [stepControl]="secondFormGroup">
+        <ng-template matStepLabel>Intake Form</ng-template>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Payment Information</ng-template>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Find Doctors</ng-template>
+      </mat-step>
+    </mat-vertical-stepper>
+  </div>
+
+  <div fxFlex>
+    <div class="router"><span class="link" routerLink=''>Home</span> / Book Appointment</div>
+    <div>
+      <mat-card class="card">
+        <div class="heading">
+          Book Appointment
+        </div>
+        <div class="radio-div" fxLayout='column'>
+          <label class="radio-label" id="example-radio-group-label">Appointment Type?</label>
+          <mat-radio-group [(ngModel)]="type" aria-labelledby="example-radio-group-label" class="radio-group">
+            <mat-radio-button value='new' class="example-radio-button radio-button-label">
+              New
+            </mat-radio-button>
+            <mat-radio-button fxFlexOffset=40px value='Follow-up' class="example-radio-button radio-button-label">
+              Follow-up
+            </mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="radio-div" fxLayout='column'>
+          <label class="radio-label" id="example-radio-group-label">How would you like to connect with doctor?</label>
+          <mat-radio-group [(ngModel)]="connectType" aria-labelledby="example-radio-group-label" class="radio-group">
+            <mat-radio-button value='audio' class="example-radio-button radio-button-label">
+              Only Audio
+            </mat-radio-button>
+            <mat-radio-button fxFlexOffset=40px value='video' class="example-radio-button radio-button-label">
+              Vidoe
+            </mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="radio-div" fxLayout='column'>
+          <label class="radio-label" id="example-radio-group-label">Would you like to invite care taker / family member
+            for consultation?</label>
+          <mat-radio-group [(ngModel)]="careTaker" aria-labelledby="example-radio-group-label" class="radio-group">
+            <mat-radio-button value='yes' class="example-radio-button radio-button-label">
+              Yes
+            </mat-radio-button>
+            <mat-radio-button fxFlexOffset=40px value='no' class="example-radio-button radio-button-label">
+              No
+            </mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div fxLayout fxLayoutAlign='space-between center'>
+          <div class="select-list-head">Select from My Delegate User list</div>
+          <button class="view-detail" mat-raised-button>Add Delegate</button>
+        </div>
+        <div>
+
+          <div *ngFor='let i of [1,2,3,4]; let ind=index' class="row" fxLayout fxLayoutAlign='space-between center'>
+            <div fxLayout fxLayoutAlign='center center'>
+              <mat-checkbox [checked]="ind != 0" class="example-margin"></mat-checkbox>
+              <img *ngIf="ind % 2 == 0" fxFlexOffset=10px class="profile" src="../../../assets/image/profile1.jpeg"
+                alt="">
+              <img *ngIf="ind % 2 != 0" fxFlexOffset=10px class="profile" src="../../../assets/image/tanya.jpg" alt="">
+            </div>
+            <div>
+              <div class="name">
+                Adam Gayle
+              </div>
+              <div class="relation">
+                Family
+              </div>
+            </div>
+            <div fxHide.xs class="mail-id">
+              andy1985@gmail.com
+            </div>
+            <div class="mobile">
+              +1 8878257808
+            </div>
+          </div>
+        </div>
+
+      </mat-card>
+      <button class="view-detail" mat-raised-button>Next</button>
+    </div>
+  </div>
+</div>

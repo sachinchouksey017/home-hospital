@@ -1,0 +1,77 @@
+.main-display {
+    padding: 11px 30px;
+    .card {
+        border-radius: 5px;
+        box-shadow: 0px 2px 13px 0 rgba(88, 92, 101, 0.3);
+        background-color: #ffffff;
+        min-height: 184px;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+    }
+}
+.icon {
+    color: grey;
+}
+.field {
+    min-height: 79.5px;
+}
+.form-field {
+    min-width: 250px;
+}
+.label {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+    min-height: 14px;
+}
+.gender {
+    margin-bottom: 25px;
+}
+.view-detail {
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px 0 rgba(88, 92, 101, 0.82);
+    color: white;
+    background-color: #1fa4dd;
+    padding: 0 22px;
+    line-height: 42px;
+}
+// css for card start
+.record-count {
+    margin: 30px 10px 15px 0;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1fa4dd;
+  }
+// css for card end
+
+@media only screen and (min-width: 1800px) {
+    .main-display {
+        .card {
+            width: 80%;
+        }
+    }
+}
+@media only screen and (max-width: 960px) {
+    .form-field {
+        min-width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .appointment-card {
+        margin-top: 30px;
+    }
+}
